@@ -7,10 +7,7 @@ $(document).ready(() => {
     ui.init();
 
     if (location.href.includes('#about')) $('.about').removeClass('hidden');
-});
 
-$(document).one('click', '.modes .main', () => {
-    $('main').fadeOut(500);
     $('aside').addClass('visible');
 
     setTimeout(() => {
@@ -28,7 +25,7 @@ $(document).one('click', '.modes .main', () => {
             </div>
         </div>`;
 
-        $('main').empty().html(html).show();
+        $('main').empty().html(html);
 
         game.init();
     }, 1200);

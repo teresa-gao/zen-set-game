@@ -33,17 +33,6 @@
                     margin: 0 4px;
                 }
             }
-            
-            .modes {
-                width: calc(100% - 32px);
-                // flex-flow: column;
-
-                .mode {
-                    &:not(:last-child) {
-                        margin-right: 16px;
-                    }
-                }
-            }
         }
     }
 }
@@ -69,93 +58,6 @@
 
                 br {
                     display: none;
-                }
-            }
-            
-            .modes {
-                position: relative;
-                width: 100%;
-                flex-flow: column;
-                margin-top: 2em;
-
-                .mode {                                        
-                    margin-bottom: 1em;
-                    
-                    &:not(:last-child) {
-                        margin-right: 0;
-                    }
-
-                    > div {
-                        display: flex;
-                        height: auto;
-                        padding: 16px 16px 16px 24px;
-
-                        > * {
-                            flex: 1;
-
-                            &:not(:last-child) {
-                                margin-right: 24px;
-                            }
-                        }
-
-                        i {
-                            flex: 0 0 40px;
-                            width: 40px;
-                            height: 40px;
-                            font-size: 1rem;
-                            margin-bottom: 0;
-                            align-self: center;
-
-                            &.fa-bolt,
-                            &.fa-mug-hot {
-                                &::before {
-                                    margin-left: 2px;
-                                }
-                            }
-                        }
-
-                        > div {
-                            h2 {
-                                text-align: left;
-                                margin-bottom: .5em;
-                            }
-
-                            p {
-                                text-align: left;
-                                margin-bottom: 0;
-                            }
-                        }
-
-                        button {
-                            margin: 0;
-                            flex: 0;
-                            align-self: center;
-                            transform: none;
-                            width: auto;
-                        }
-                    }
-
-
-                    &.main {
-                        order: -1;
-                        
-                        > div {
-                            margin-top: 0;
-                            padding-bottom: 16px;
-
-                            &::before {
-                                height: 100%;
-                                width: 6px;
-                                border-radius: 4px 0 0 4px;
-                            }
-                        }
-                    }
-
-                    &.soon {
-                        > div {
-                            padding-right: 32px;
-                        }
-                    }
                 }
             }
         }
@@ -379,26 +281,6 @@
             > h1,
             > p {
                 display: none;
-            }
-
-            .modes {
-                margin-top: 0;
-
-                .mode {
-                    > div {
-                        button {
-                            display: none;
-                        }
-                    }
-
-                    &.main {
-                        > div {
-                            > div {
-                                margin-right: 0;
-                            }
-                        }
-                    }
-                }
             }
         }
 
