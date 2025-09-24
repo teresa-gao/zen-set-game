@@ -325,27 +325,6 @@
             overflow: hidden;
         }
     }
-
-    .tutorial {
-        padding-left: 0;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .tutorial {
-        .content {
-            > .row {
-                &:not(.buttons) {
-                    display: block;
-
-                    > *:not(:last-child) {
-                        margin-right: 0;
-                        margin-bottom: 1em;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 500px) {

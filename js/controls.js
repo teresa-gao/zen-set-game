@@ -1,7 +1,6 @@
 import game from './game.js';
 import sound from './sound.js';
 import toast from './toast.js';
-import tutorial from './tutorial.js';
 
 export default {
     init() {
@@ -20,12 +19,6 @@ export default {
                 $('.fa-volume-up').addClass('hidden');
                 $('.controls .sound span').html('Sound off');
             }
-        });
-        
-        $(document).on('click', '.controls .help', () => {
-            if ($('.tutorial').is(':not(.hidden)')) return;
-            game.pause(false);
-            tutorial.show();
         });
         
         $(document).on('click', '.controls .see-about', () => {

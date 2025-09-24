@@ -2,7 +2,6 @@ import ai from './ai.js';
 import board from './board.js';
 import deck from './deck.js';
 import sound from './sound.js';
-import tutorial from './tutorial.js';
 import user from './user.js';
 
 export default {
@@ -21,20 +20,14 @@ export default {
         this.reset();
 
         deck.init();
-        tutorial.init();
         user.init();
     
-        if (localStorage.getItem('tutorial') === 'false') {
-            setTimeout(() => this.start(), 1000);
-        } else {
-            setTimeout(() => tutorial.show(), 1000);
-        }
+        setTimeout(() => this.start(), 1000);
     },
 
     start() {
         if (isDev) console.log('game start');
 
-        $('.controls .help').removeClass('hidden');
         this.started = true;
 
         deck.firstDeal();
