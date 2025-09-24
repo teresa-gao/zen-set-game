@@ -3,7 +3,15 @@
 ## About
 
 This repository is forked from https://github.com/hugosaintemarie/set-game
-and adds Zen mode (i.e., no computer bot competition) and dark mode.
+and implements some additional features.
+
+### Added Features
+
+| Feature | Description | Status |
+| ------- | ----------- | ------ |
+| UI simplification | Remove menus, instructions, sounds | In progress |
+| Dark mode | Automatically toggle theme based on user device and/or explicitly designated preferences | Not yet started |
+| Zen mode | Allow user to play Set for a set time, number of sets, or ad infinitum | Not yet started |
 
 ## Setup
 
