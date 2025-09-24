@@ -1,25 +1,9 @@
 import game from './game.js';
-import sound from './sound.js';
 import toast from './toast.js';
 
 export default {
     init() {
         if (isDev) console.log('controls init');
-
-        $(document).on('click', '.controls .sound', () => {
-            sound.on = !sound.on;
-        
-            if (sound.on) {
-                $('.fa-volume-up').removeClass('hidden');
-                $('.fa-volume-off').addClass('hidden');
-                sound.play('click');
-                $('.controls .sound span').html('Sound on');
-            } else {
-                $('.fa-volume-off').removeClass('hidden');
-                $('.fa-volume-up').addClass('hidden');
-                $('.controls .sound span').html('Sound off');
-            }
-        });
         
         $(document).on('click', '.controls .see-about', () => {
             $('.palettes').addClass('hidden');

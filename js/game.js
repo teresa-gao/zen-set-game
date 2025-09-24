@@ -1,7 +1,6 @@
 import ai from './ai.js';
 import board from './board.js';
 import deck from './deck.js';
-import sound from './sound.js';
 import user from './user.js';
 
 export default {
@@ -166,7 +165,6 @@ export default {
                 const currentCount = Math.round( countTo * progress );
 
                 if (parseInt(el.innerHTML, 10) !== currentCount) {
-                    sound.play('click');
                     el.innerHTML = currentCount;
                 }
 
@@ -199,9 +197,6 @@ export default {
                     count($('h1.user')[0]);
 
                     setTimeout(() => {
-                        if (won) sound.play('4');
-                        else sound.play('3');
-
                         $('.end h2, .end .icon').removeClass('hidden');
                         setTimeout(() => $('.end button').removeClass('hidden'), 1000);
                     }, 2500);

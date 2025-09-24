@@ -1,11 +1,9 @@
 import controls from './controls.js';
 import game from './game.js';
-import sound from './sound.js';
 import ui from './ui.js';
 
 $(document).ready(() => {
     controls.init();
-    sound.init();
     ui.init();
 
     if (location.href.includes('#about')) $('.about').removeClass('hidden');

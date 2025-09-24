@@ -146,17 +146,6 @@ button {
             color: #666666;
         }
 
-        &.sound {
-            span {
-                display: inline-block;
-                width: 80px;
-            }
-
-            i {
-                width: 16px;
-            }
-        }
-
         &:hover {
             i {
                 color: var(--color-primary);
@@ -164,14 +153,6 @@ button {
 
             span {
                 color: var(--color-primary);
-            }
-        }
-    }
-
-    .sound {
-        i {
-            &.hidden {
-                display: none;
             }
         }
     }
