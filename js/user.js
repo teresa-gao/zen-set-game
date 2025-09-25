@@ -90,10 +90,6 @@ export default {
         $(document).on('click', '.pause button', () => {
             game.resume();
         });
-
-        $(document).on('input', '.pause input#show', () => {
-            $('main').toggleClass('shown');
-        });
     },
 
     /**
