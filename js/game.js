@@ -5,12 +5,12 @@ import user from './user.js';
 
 export default {
     delay: { // Game animations delays
-        'add-cards': 1500,
-        'resume': 1000,
-        'show-bot-set': 3000,
-        'show-user-set': 2000,
-        'show-user-fail': 3000,
-        'start-bot': 5000
+        'add-cards': 1000,
+        'resume': 500,
+        'show-bot-set': 1250,
+        'show-user-set': 250,
+        'show-user-fail': 1000,
+        'start-bot': 2500
     },
 
     init() {
