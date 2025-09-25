@@ -71,7 +71,7 @@ export default {
         }
 
         // Update text
-        $(`.${to} p.score`).text(this.points[to] ? `${this.points[to]} set${this.points[to] > 1 ? 's' : ''}` : 'No set yet');
+        $(`.${to} p.score`).text(this.points[to] ? `${this.points[to]} point${this.points[to] > 1 ? 's' : ''}` : '0 points');
     },
 
     pause(showPause = true) {
