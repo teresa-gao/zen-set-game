@@ -126,19 +126,19 @@ export default {
         const html = `<div class="end hidden">
             <div class="content">
                 <h3>Game ended</h3>
-                <h2 class="hidden">${won ? 'Well done!' : 'Maybe next time'}</h2>
+                <h2 class="hidden">${won ? 'Well done!' : 'Maybe next time ...'}</h2>
 
                 <div class="row">
                     <div>
                         <span class="icon hidden">${won ? '' : '<i class="fas fa-crown"></i>'}</span>
-                        <h4>Bot score</h4>
+                        <h4>Bot Score</h4>
                         <h1 class="bot" data-to="${this.points.bot}">·</h1>
                         <p>Sets found: ${this.sets.bot}</p>
                     </div>
 
                     <div>
                         <span class="icon hidden">${won ? '<i class="fas fa-crown"></i>' : ''}</span>
-                        <h4>Your score</h4>
+                        <h4>Your Score</h4>
                         <h1 class="user" data-to="${this.points.user}">·</h1>
 
                         <p>Sets found: <span class="${this.sets.user ? 'valid' : 'error'}">${this.sets.user}</span></p>
@@ -146,8 +146,7 @@ export default {
                     </div>
                 </div>
 
-                <button class="primary hidden">Play again</button>
-                <a href="/"><button class="tertiary hidden">Back to homepage</button></a>
+                <button class="primary hidden">Play Again</button>
             </div>
         </div>`;
 
