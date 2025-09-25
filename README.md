@@ -10,7 +10,7 @@ and implements some additional features.
 | Feature | Description | Status |
 | ------- | ----------- | ------ |
 | UI simplification | Remove menus, instructions, sounds | In progress |
-| Dark mode | Automatically toggle theme based on user device and/or explicitly designated preferences | Not yet started |
+| Dark mode | Automatically toggle theme based on user device and/or explicitly designated preferences | In progress |
 | Zen mode | Allow user to play Set for a set time, number of sets, or ad infinitum | Not yet started |
 
 ## Setup
