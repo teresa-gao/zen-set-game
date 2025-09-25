@@ -170,7 +170,7 @@ aside {
                 &.waiting {
                     &::before {
                         opacity: 1;
-                        animation: countdown 10s linear;
+                        animation: countdown 5s linear;
                     }
                 }
 

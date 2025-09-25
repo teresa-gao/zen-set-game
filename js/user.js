@@ -66,9 +66,9 @@ export default {
             $el.closest('ul').find('li.selected').removeClass('selected');
             $el.addClass('selected');
 
-            if ($el.hasClass('easy')) ai.speed = 2000;
-            else if ($el.hasClass('medium')) ai.speed = 1500;
-            else if ($el.hasClass('hard')) ai.speed = 1000;
+            if ($el.hasClass('easy')) ai.speed = 1000;
+            else if ($el.hasClass('medium')) ai.speed = 750;
+            else if ($el.hasClass('hard')) ai.speed = 500;
         });
 
         $(document).on('click', '.difficulty', () => false);
@@ -102,14 +102,14 @@ export default {
         // Waiting for user to pick three cards
         game.waiting = true;
 
-        // Start a 10 seconds clock
-        clock.countdown(10);
+        // Start a clock
+        clock.countdown(5);
 
         // Stop bot tests
         ai.foundSet = true;
 
         // Change button text
-        $('button.main').html('<div class="count">10</div><span>Select 3 cards</span>').attr('disabled', true).addClass('waiting');
+        $('button.main').html('<div class="count">5</div><span>Select 3 cards</span>').attr('disabled', true).addClass('waiting');
 
         // Make cards clickable
         $('main').addClass('waiting');

@@ -64,14 +64,14 @@ export default {
             // Add a point
             this.sets[to] += 1;
             this.points[to] += 1;
-        } else if (point === -1 && this.points[to] !== 0) {
+        } else if (point === -1) {
             // Withdraw a point (if not already at 0)
             this.points[to] -= 1;
             this.errors[to] += 1;
         }
 
         // Update text
-        $(`.${to} p.score`).text(this.points[to] ? `${this.points[to]} point${this.points[to] > 1 ? 's' : ''}` : '0 points');
+        $(`.${to} p.score`).text(this.points[to] ? `${this.points[to]} point${Math.abs(this.points[to]) == 1 ? '' : 's'}` : '0 points');
     },
 
     pause(showPause = true) {
@@ -157,13 +157,13 @@ export default {
 
         const count = el => {
             let frame = 0;
-            const countTo = parseInt($(el).attr('data-to'), 10);
+            const countTo = parseInt($(el).attr('data-to'), t);
             const counter = setInterval(() => {
                 frame++;
                 const progress = easeOutQuad(frame / totalFrames);
                 const currentCount = Math.round( countTo * progress );
 
-                if (parseInt(el.innerHTML, 10) !== currentCount) {
+                if (parseInt(el.innerHTML, t) !== currentCount) {
                     el.innerHTML = currentCount;
                 }
 

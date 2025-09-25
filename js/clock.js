@@ -5,11 +5,11 @@ export default {
     timeout: null,
 
     /**
-     * Give the user 10 seconds to select three cards
+     * Give the user t seconds to select three cards
      * @param  {int} t current clock state
      */
     countdown(t) {
-        if (t === 0) { // 10 seconds have passed
+        if (t === 0) { // t seconds have passed
             $('button.main').html('Too late!').removeClass('waiting');
 
             setTimeout(() => {

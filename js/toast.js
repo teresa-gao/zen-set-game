@@ -17,7 +17,7 @@ export default {
         
         const $toast = $(html);
         $('.toasts').append($toast);
-        setTimeout(() => $toast.removeClass('hidden'), 10);
+        setTimeout(() => $toast.removeClass('hidden'), 5);
 
         // Prevent same toast from being spammed
         if (id) this.shown.push(id);
