@@ -157,13 +157,13 @@ export default {
 
         const count = el => {
             let frame = 0;
-            const countTo = parseInt($(el).attr('data-to'), t);
+            const countTo = parseInt($(el).attr('data-to'), 10);
             const counter = setInterval(() => {
                 frame++;
                 const progress = easeOutQuad(frame / totalFrames);
                 const currentCount = Math.round( countTo * progress );
 
-                if (parseInt(el.innerHTML, t) !== currentCount) {
+                if (parseInt(el.innerHTML, 10) !== currentCount) {
                     el.innerHTML = currentCount;
                 }
 
