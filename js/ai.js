@@ -3,7 +3,7 @@ import deck from './deck.js';
 import game from './game.js';
 
 export default {
-    speed: 2000, // Bot delay between each test
+    speed: 0, // Overridden by user.js, set in game.js
     solveTimeout: null,
     test: 0, // Number of bot test loops
     foundSet: false, // Set found?

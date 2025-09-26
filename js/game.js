@@ -10,7 +10,10 @@ export default {
         'show-bot-set': 1250,
         'show-user-set': 250,
         'show-user-fail': 1000,
-        'start-bot': 2500
+        'start-bot': 2500,
+        'bot-delay-easy': 1000,
+        'bot-delay-medium': 800,
+        'bot-delay-hard': 500,
     },
 
     init() {

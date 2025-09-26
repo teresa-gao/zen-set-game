@@ -66,9 +66,9 @@ export default {
             $el.closest('ul').find('li.selected').removeClass('selected');
             $el.addClass('selected');
 
-            if ($el.hasClass('easy')) ai.speed = 1000;
-            else if ($el.hasClass('medium')) ai.speed = 750;
-            else if ($el.hasClass('hard')) ai.speed = 500;
+            if ($el.hasClass('easy')) ai.speed = game.delay['bot-delay-easy'];
+            else if ($el.hasClass('medium')) ai.speed = game.delay['bot-delay-medium'];
+            else if ($el.hasClass('hard')) ai.speed = game.delay['bot-delay-hard'];
         });
 
         $(document).on('click', '.difficulty', () => false);
